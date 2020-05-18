@@ -1,7 +1,7 @@
-def LogItem(function):
+def LogItem(metodo):
     def wrapper(self, item):
         print('Item Adicionado')
-        return function(self, item)
+        return metodo(self, item)
 
     return wrapper
 
